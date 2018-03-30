@@ -38,9 +38,9 @@
 
 static inline int decode_header(unsigned char val) {
   int i = -1;
-  while ((signed char)val < 0) {
+  while ((signed char)val < 0 && i < PACK_COUNT-1) { // Fix bug where program will hang if i > PACK_COUNT due to buffer overflow
     val <<= 1;
-    ++i;
+    i++;
   }
   return i;
 }
