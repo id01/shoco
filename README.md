@@ -189,3 +189,7 @@ If you find a bug, or have a feature request, [file it](https://github.com/Ed-vo
 ## Authors
 
 **shoco** is written by [Christian Schramm](mailto:christian.h.m.schramm at gmail.com - replace the 'at' with @ and delete this sentence).
+
+## Changes
+
+Forked to fix a bug where the code would infinite loop and to add a Python 3 interface.
